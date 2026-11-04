@@ -6,7 +6,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 import About from './About.jsx';
 import Contact from './Contact.jsx';
-import link from './Link.jsx'
+import Page from './Page.jsx';
+import Home from './Home.jsx';
+
 
 export const Navbaar = () => {
   return (
@@ -30,7 +32,7 @@ export const Navbaar = () => {
           <Link className="nav-link" to='/contact'>Contact</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/link'>link</Link>
+          <Link className="nav-link" to='/page'>page</Link>
         </li>
         
       </ul>
@@ -39,9 +41,11 @@ export const Navbaar = () => {
 </nav>
 
 <Routes>
+    <Route path='/' element={<Home/>}/>
    < Route path='/about' element={<About/>}/>
    < Route path='/contact' element={<Contact/>}/>
-<Route  path='/link' element={<link/>}/>
+   < Route path='/page' element={<Page/>}/>
+
    
 </Routes>
 
