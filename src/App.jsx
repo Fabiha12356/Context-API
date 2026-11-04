@@ -9,9 +9,6 @@ export const App = () => {
   return (
     <>
     <Navbaar/>
-    <Comp1/>
-    <hr />
-    <Comp2/>
     </>
   )
 }
